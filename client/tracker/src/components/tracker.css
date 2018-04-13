@@ -25,6 +25,7 @@ body {
     background-color: lightsteelblue;
     padding-left: 10px;
     padding-top: 25px;
+    float: left;
   }
   
   .footer {
