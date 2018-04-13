@@ -10,37 +10,68 @@
             </nav>
             </div>
             <div class="content">
-            <!-- content here pls -->
             <h2>Search Reports</h2>
+
+<div class="filter">
+  <label for="autocomplete-dropdown">Autocomplete dropdown: </label>
+  <autocomplete-dropdown id="autocomplete-dropdown" :options="fruitOptions" v-model="selectedFruit"></autocomplete-dropdown>
+</div>
+
+  <div class="dropdown">
+      <input type="text" v-model="searchText">
+  </div>
+
+  <ul class="suggestion-list">
+  <li v-for="(suggestion) in matches"
+    :key="suggestion-list">
+    {{ suggestion[0] }}
+  </li>
+</ul>
+
+<div class="dropdown" :class="{'open' : open}"></div>
+
+<a class="toggle" @mousedown.prevent @click="setOpen(!open)">
+  <span class="arrow-up">▲</span>
+  <span class="arrow-down">▼</span>
+</a>
+
+
+<li v-for="(suggestion, index) in matches"
+  :class="{'active' : index === highlightIndex}"
+  @mousedown.prevent
+  @click="suggestionSelected(suggestion)"
+  :key="suggestion"
+>
+  {{ suggestion[0] }}
+</li>
+
+
+
+<input type="text"
+  ref="search"
+  :placeholder="placeholder"
+  v-model="searchText"
+  @input="searchChanged"
+  @keydown.enter="suggestionSelected(matches[highlightIndex])"
+  @keydown.down="down"
+  @keydown.up="up"
+  @keydown.esc="setOpen(false)"
+  @blur="setOpen(false)"
+>
+
+
+
+
+
             <div class='container'>
-                    <div class='dropdown' id='period-dropdown'>
-                    <div class='dropdown-button'>Pay Period</div>
-                    <span class='triangle'>&#9660;</span>
-                    <ul class='dropdown-selection'>
-                      <li>Date01</li>
-                      <li>Date02</li>
-                      <li>Date03</li>
-                      <li>Date04</li>
-                    </ul>
-                  </div>
-                  <div class='dropdown' id='cm-dropdown'>
-                    <div class='dropdown-button'>Case Manager</div>
-                    <span class='triangle'>&#9660;</span>
-                    <ul class='dropdown-selection'>
-                      <li>Name01</li>
-                      <li>Name02</li>
-                      <li>Name03</li>
-                      <li>Name04</li>
-                    </ul>
-                  </div>
-                  </div>
-  
+                </div>
             </div>
-            <div class="footer">
-                <small>2018 footer</small>
-            </div>
-                    </div>
+           <div class="footer">
+            <small>2018 footer</small>
+          </div>
+        </div>
 </body>
 </template>
 <style src="./tracker.css"></style>
+<style src="./main.js"></style>
 
