@@ -8,7 +8,11 @@
             </nav>
             </div>
             <div class="content">
-                <h2>My Profile</h2> <br>                
+                <div id="profilepic">
+                <h2>My Profile</h2>
+                    <img src="./user_profile_female.jpg">
+                </div>
+                <br>                
                 <div class="info">
                 <h3>Name</h3>
                 <p>
