@@ -10,7 +10,8 @@
             <div class="content">
                 <div id="profilepic">
                 <h2>My Profile</h2>
-                    <img src="./user_profile_female.jpg">
+            <img src="./user.png" height="150" width = "150">
+                
                 </div>
                 <br>                
                 <div class="info">

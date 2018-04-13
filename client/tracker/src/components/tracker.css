@@ -63,9 +63,6 @@ body {
     align-items:center;
     height:100%;
   }
-h2, .info {
-  float: left;
-}
 .profilepic {
   float: left;
 }
