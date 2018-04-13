@@ -1,6 +1,8 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: left;
+    height: 100%;
+    display: grid;
   }
   
   nav {
@@ -12,6 +14,7 @@ body {
     grid-template-areas: "sidebar content"
     "footer footer";
     grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
   } 
   
   .sidebar {
@@ -63,6 +66,17 @@ body {
     align-items:center;
     height:100%;
   }
-.profilepic {
-  float: left;
+ul{
+  list-style: none;
+
+}
+.flexcontainer {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+@media (max-width: 320px) {
+  .flexcontainer {
+    display: block;
+  }
 }

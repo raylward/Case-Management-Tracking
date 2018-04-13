@@ -3,7 +3,7 @@
 <body>
     <div class="grid">
         <div class="sidebar">
-            <header><h1>Welcome, <br> Name</h1></header> <br>
+            <header><h1>Welcome, <br> 'Name'</h1></header> <br>
             <nav>
                 <a href="#/index">My Profile</a> <br> <br>
                 <a href="#/search">Search Reports</a>
