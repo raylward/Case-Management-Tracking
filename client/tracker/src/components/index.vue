@@ -3,8 +3,8 @@
         <div class="sidebar">
             <header><h1>Welcome, <br> Name</h1></header> <br>
             <nav>
-                <a href="enter">Enter Reports</a> <br> <br>
-                <a href="search">Search Reports</a>
+                <a href="#/enter">Enter Reports</a> <br> <br>
+                <a href="#/search">Search Reports</a>
             </nav>
             </div>
             <div class="content">
