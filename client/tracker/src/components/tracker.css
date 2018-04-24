@@ -4,62 +4,51 @@ body {
     height: 100%;
     display: grid;
   }
-  
   nav {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
-  
   .grid  {
     display: grid;
     grid-template-areas: "sidebar content"
     "footer footer";
     grid-template-columns: auto 1fr;
     grid-template-rows: 1fr;
-  } 
-  
+  }
   .sidebar {
     grid-area: sidebar;
     background-color: lightslategray;
     padding-left: 10px;
     padding-right: 10px;
   }
-  
   .content    {
     grid-area: content; 
     background-color: lightsteelblue;
     padding-left: 10px;
     padding-left: 10px;
   }
-  
   .footer {
   grid-area: footer;
   text-align: center;
   background-color: gray;
   padding: 1rem;
   }
-  
   nav a {
     text-decoration: none;
   }
-  
   nav a:link  {
     color: rgb(31, 30, 30);
   }
-  
   nav a:hover {
     color: black;
   }
-  
   nav a:visited   {
     color: gainsboro;
   }
-  
   body,html {
     height:100%;
     margin:0;
     padding:0;
     width: 100%;
-    
   }
   .container {
     display:flex;
@@ -69,7 +58,6 @@ body {
   }
 ul{
   list-style: none;
-
 }
 .flexcontainer {
   display: flex;
@@ -80,4 +68,41 @@ ul{
   .flexcontainer {
     display: block;
   }
+}
+table {
+  font-family: arial, sans-serif;
+  padding-top: 30px;
+  display: block;
+  width: 100%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+button{
+  padding: 4px;
+  background-color: rgb(198, 198, 230);
+  font-size: 15px;
+}
+
+.button{
+  display: block;
+  padding-top: 15px;
+  text-decoration: none;
+  width:100%;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+p {
+  text-align: center;
 }

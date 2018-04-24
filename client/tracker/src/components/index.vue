@@ -4,21 +4,21 @@
         <div class="sidebar">
             <header><h1>Welcome, <br> 'Name'</h1></header> <br>
             <nav>
-                
+
                 <a href="#/enter">Enter Reports</a> <br> <br>
                 <a href="#/search">Search Reports</a>
             </nav>
             </div>
             <div class="content">
-                
+
                 <div class="myprofile">
             <h2>My Profile</h2>
             </div>
-            <div class="flexcontainer"> 
-            <div>       
+            <div class="flexcontainer">
+            <div>
             <img src="./user.png" height="150" width = "150">
             </div>
-                <br>                
+                <br>
                 <div class="info">
                 <ul>
                 <li>'Name'</li><br>
@@ -39,3 +39,4 @@
 </template>
 
 <style src="./tracker.css"></style>
+<style src="./main.js"></style>

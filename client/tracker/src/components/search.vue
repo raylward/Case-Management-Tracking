@@ -10,30 +10,30 @@
             </div>
             <div class="content">
          <h2>Search Reports</h2>
-<label>Case Manager: </label>
-<input type=”text” list=”casemanager” /> 
- <datalist id=”casemanager”>
-      <option value=Name01 />
-      <option value=Name02 />
-</datalist>
+            <label>Case Manager: </label>
+            <input type=”text” list=”casemanager”/>
+            <datalist id=”casemanager”>
+                <option value=Name01></option>
+                <option value=Name02></option>
+            </datalist>
 
-<label>Status: </label>
-<input type=”text” list=”status” /> 
- <datalist id=”status”>
-      <option value=Approved />
-      <option value=Pending />
-      <option value=Rejected />
-</datalist>
+            <label>Status: </label>
+            <input type=”text” list=”status”>
+            <datalist id=”status”>
+                <option value=Approved></option>
+                <option value=Pending></option>
+                <option value=Rejected></option>
+            </datalist>
 
-<label>Pay Period: </label>
-<input type=”text” list=”payperiod” /> 
- <datalist id=”payperiod”>
-      <option value=Date01 />
-      <option value=Date02 />
-</datalist>
+            <label>Pay Period: </label>
+            <input type=”text” list=”payperiod”>
+            <datalist id=”payperiod”>
+                <option value=Date01></option>
+                <option value=Date02></option>
+            </datalist>
             </div>
            <div class="footer">
-            <small>2018 footer</small>
+            <small>2018</small>
           </div>
         </div>
 </body>
