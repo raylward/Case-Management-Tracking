@@ -72,12 +72,10 @@ ul{
 table {
   font-family: arial, sans-serif;
   padding-top: 30px;
-  display: block;
-  width: 100%;
-  margin-left: 20%;
-  margin-right: 20%;
+  width: 50%;
+  margin-left:auto; 
+  margin-right:auto;
 }
-
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
@@ -105,4 +103,36 @@ button{
 
 p {
   text-align: center;
+}
+
+.ui.dropdown {
+  min-height: 14px !important;
+  max-width: 150px;
+}
+
+.ui.dropdown .text {
+  font-size: 14px !important;
+}
+
+.ui.dropdown .menu > .item {
+  font-size: 14px !important;
+}
+
+.ui.search.selection.dropdown > input.search {
+  font-size: 14px !important;
+  line-height: 14px !important;
+}
+
+.ui.selection.dropdown .menu {
+  min-width: calc(100%) !important;
+  width: calc(100%) !important;
+}
+.ui.fluid.dropdown {
+  width: auto;
+}
+.ui.label > .delete.icon:after {
+  content: "x";
+  color: #266d4d;
+  font-size: 16px;
+  font-style: normal;
 }

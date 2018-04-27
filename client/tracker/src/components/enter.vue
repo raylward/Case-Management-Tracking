@@ -109,6 +109,7 @@
         <td>0</td></tr>
     </table>
     <p><strong>Total Points: </strong></p>
+    <p><strong>Total Points Above: </strong></p>
     <div class="button">
         <button type="button">Save</button>
         <button type="submit" v-confirm="Submit">Submit</button>
@@ -123,7 +124,9 @@
 </template>
 
 <script>
+// eslint-disable-next-line
 window.Vue.use(VuejsDialog.default)
+
 </script>
 
 <script type="text/javascript" src=".\node_modules\vuejs-dialog\dist\vuejs-dialog.min.js"></script>

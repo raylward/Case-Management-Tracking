@@ -11,7 +11,6 @@ new Vue({
   template: '<App/>'
 })
 
-// eslint disable-next-line
 Vue.use(VuejsDialog)
 
 /*

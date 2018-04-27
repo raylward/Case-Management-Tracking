@@ -10,33 +10,83 @@
             </div>
             <div class="content">
          <h2>Search Reports</h2>
-            <label>Case Manager: </label>
-            <input type=”text” list=”casemanager”/>
-            <datalist id=”casemanager”>
-                <option value=Name01></option>
-                <option value=Name02></option>
-            </datalist>
 
-            <label>Status: </label>
-            <input type=”text” list=”status”>
-            <datalist id=”status”>
-                <option value=Approved></option>
-                <option value=Pending></option>
-                <option value=Rejected></option>
-            </datalist>
+        <model-select :options="options"
+                                v-model="item"
+                                placeholder="Pay Period">
+         </model-select>
+<br>
+         <model-select :options="options2"
+                                 v-model="item2"
+                                 placeholder="Status">
+         </model-select>
 
-            <label>Pay Period: </label>
-            <input type=”text” list=”payperiod”>
-            <datalist id=”payperiod”>
-                <option value=Date01></option>
-                <option value=Date02></option>
-            </datalist>
-            </div>
+        <table>
+            <tr>
+                <th>Pay Period</th>
+                <th>Status</th>
+            </tr>
+            <tr><td>Feb 1 2018 - Feb 15 2018</td>
+            <td>Approved</td></tr>
+            <tr><td>Feb 16 2018 - Feb 28 2018</td>
+            <td>Approved</td></tr>
+            <tr><td>March 1 2018 - March 15 2018</td>
+            <td>Pending</td></tr>
+        </table>
+        </div>
            <div class="footer">
             <small>2018</small>
           </div>
         </div>
 </body>
 </template>
+
+<script>
+  import { ModelSelect } from 'vue-search-select'
+
+  export default {
+    data () {
+      return {
+        options: [
+          { value: '1', text: 'Date01' },
+          { value: '2', text: 'Date02' },
+          { value: '3', text: 'Date03' },
+          { value: '4', text: 'Date04' },
+          { value: '5', text: 'Date05' }
+        ],
+        item: {
+          value: '',
+          text: ''
+        },
+        options2: [
+          { value: '1', text: 'Approved' },
+          { value: '2', text: 'Pending' },
+          { value: '3', text: 'Rejected' }
+        ],
+        item2: ''
+      }
+    },
+    methods: {
+      reset () {
+        this.item = {}
+      },
+      selectOption () {
+        // select option from parent component
+        this.item = this.options[0]
+      },
+      reset2 () {
+        this.item2 = ''
+      },
+      selectOption2 () {
+        // select option from parent component
+        this.item2 = this.options2[0].value
+      }
+    },
+    components: {
+      ModelSelect
+    }
+  }
+</script>
+
 <style src="./tracker.css"></style>
 <style src="./main.js"></style>
